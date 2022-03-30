@@ -1,4 +1,6 @@
-# Marlin 3D Printer Firmware
+# Marlin 3D Printer Firmware Fen Edition
+
+This project is a fork of the Marlin 3D Printer firmware that is designed to work with my **Creality CR-10S** printer that includes modifications that make it easier for me to use.
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
 ![GitHub contributors](https://img.shields.io/github/contributors/marlinfirmware/marlin.svg)
