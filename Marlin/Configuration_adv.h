@@ -1478,39 +1478,6 @@
     #endif
   #endif
 
-<<<<<<< HEAD
-  // Insert a menu for preheating at the top level to allow for quick access
-  //#define PREHEAT_SHORTCUT_MENU_ITEM
-
-#endif // HAS_LCD_MENU
-
-#if ANY(HAS_DISPLAY, DWIN_CREALITY_LCD_ENHANCED, DWIN_CREALITY_LCD_JYERSUI)
-  //#define SOUND_MENU_ITEM   // Add a mute option to the LCD menu
-#endif
-
-#if EITHER(HAS_DISPLAY, DWIN_CREALITY_LCD_ENHANCED)
-  // The timeout (in ms) to return to the status screen from sub-menus
-  //#define LCD_TIMEOUT_TO_STATUS 15000
-
-  #if ENABLED(SHOW_BOOTSCREEN)
-    #define BOOTSCREEN_TIMEOUT 4000      // (ms) Total Duration to display the boot screen(s)
-    #if EITHER(HAS_MARLINUI_U8GLIB, TFT_COLOR_UI)
-      #define BOOT_MARLIN_LOGO_SMALL     // Show a smaller Marlin logo on the Boot Screen (saving lots of flash)
-    #endif
-  #endif
-
-  // Scroll a longer status message into view
-  #define STATUS_MESSAGE_SCROLLING
-
-  // On the Info Screen, display XY with one decimal place when possible
-  //#define LCD_DECIMAL_SMALL_XY
-
-  // Add an 'M73' G-code to set the current percentage
-  //#define LCD_SET_PROGRESS_MANUALLY
-
-  // Show the E position (filament used) during printing
-  //#define LCD_SHOW_E_TOTAL
-=======
 #endif // HAS_DISPLAY || DWIN_LCD_PROUI
 
 // Add 'M73' to set print job progress, overrides Marlin's built-in estimate
@@ -1523,7 +1490,6 @@
   #if BOTH(M73_REPORT, SDSUPPORT)
     #define M73_REPORT_SD_ONLY            // Report only when printing from SD
   #endif
->>>>>>> upstream/2.1.x
 #endif
 
 // LCD Print Progress options. Multiple times may be displayed in turn.
@@ -1885,19 +1851,8 @@
 #endif // HAS_MARLINUI_U8GLIB
 
 #if HAS_MARLINUI_U8GLIB || IS_DWIN_MARLINUI
-<<<<<<< HEAD
-  // Show SD percentage next to the progress bar
-  #define SHOW_SD_PERCENT
-
-  // Enable to save many cycles by drawing a hollow frame on Menu Screens
-  #define MENU_HOLLOW_FRAME
-
-  // Swap the CW/CCW indicators in the graphics overlay
-  //#define OVERLAY_GFX_REVERSE
-=======
   #define MENU_HOLLOW_FRAME           // Enable to save many cycles by drawing a hollow frame on Menu Screens
   //#define OVERLAY_GFX_REVERSE       // Swap the CW/CCW indicators in the graphics overlay
->>>>>>> upstream/2.1.x
 #endif
 
 //
@@ -2764,13 +2719,8 @@
    */
   #define INTERPOLATE      true
 
-<<<<<<< HEAD
   #if AXIS_IS_TMC(X)
     #define X_CURRENT       650        // (mA) RMS current. Multiply by 1.414 for peak current.
-=======
-  #if AXIS_IS_TMC_CONFIG(X)
-    #define X_CURRENT       800        // (mA) RMS current. Multiply by 1.414 for peak current.
->>>>>>> upstream/2.1.x
     #define X_CURRENT_HOME  X_CURRENT  // (mA) RMS current for sensorless homing
     #define X_MICROSTEPS     16        // 0..256
     #define X_RSENSE          0.11     // Multiplied x1000 for TMC26X
@@ -2789,13 +2739,8 @@
     //#define X2_HOLD_MULTIPLIER 0.5
   #endif
 
-<<<<<<< HEAD
   #if AXIS_IS_TMC(Y)
     #define Y_CURRENT       650
-=======
-  #if AXIS_IS_TMC_CONFIG(Y)
-    #define Y_CURRENT       800
->>>>>>> upstream/2.1.x
     #define Y_CURRENT_HOME  Y_CURRENT
     #define Y_MICROSTEPS     16
     #define Y_RSENSE          0.11
@@ -2814,13 +2759,8 @@
     //#define Y2_HOLD_MULTIPLIER 0.5
   #endif
 
-<<<<<<< HEAD
-  #if AXIS_IS_TMC(Z)
-    #define Z_CURRENT       580
-=======
   #if AXIS_IS_TMC_CONFIG(Z)
     #define Z_CURRENT       800
->>>>>>> upstream/2.1.x
     #define Z_CURRENT_HOME  Z_CURRENT
     #define Z_MICROSTEPS     16
     #define Z_RSENSE          0.11
@@ -2919,13 +2859,8 @@
     //#define W_HOLD_MULTIPLIER 0.5
   #endif
 
-<<<<<<< HEAD
-  #if AXIS_IS_TMC(E0)
-    #define E0_CURRENT      650
-=======
   #if AXIS_IS_TMC_CONFIG(E0)
     #define E0_CURRENT      800
->>>>>>> upstream/2.1.x
     #define E0_MICROSTEPS    16
     #define E0_RSENSE         0.11
     #define E0_CHAIN_POS     -1
